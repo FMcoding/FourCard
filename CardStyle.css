@@ -113,6 +113,76 @@ body, html {
     float: right;
 }
 
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 1024px;
+    }
+
+    .heading-container {
+        height: 20vh;
+    }
+
+    .heading {
+        width: 80%;
+        height: 75%;
+    }
+
+    .card-container {
+        height: 73rem;
+        height: 40rem;
+    }
+
+    .cards {
+        width: 40rem;
+        height: 31.5rem;
+        display: grid;
+        grid-template-areas:
+            "supervisor team"
+            "karma calc";
+        grid-gap: 2rem;
+    }
+
+    .supervisor, .team-builder, .karma, .calculator {
+        width: 19rem;
+        height: 14.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .heading-container {
+        height: 20vh;
+    }
+
+    .heading {
+        width: 80%;
+        height: 75%;
+    }
+
+    .card-container {
+        height: 73rem;
+        height: 40rem;
+    }
+
+    .cards {
+        width: 40rem;
+        height: 31.5rem;
+        display: grid;
+        grid-template-areas:
+            "supervisor team"
+            "karma calc";
+        grid-gap: 2rem;
+    }
+
+    .supervisor, .team-builder, .karma, .calculator {
+        width: 19rem;
+        height: 14.75rem;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .heading-container {
         height: 20vh;
