@@ -72,6 +72,7 @@ body, html {
     justify-content: center;
     align-content: center;
 }
+
 .supervisor {
     grid-area: supervisor;
     border-top: 7px solid hsl(180, 62%, 55%);
@@ -110,4 +111,41 @@ body, html {
 
 .cards img {
     float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .heading-container {
+        height: 20vh;
+    }
+
+    .heading {
+        width: 80%;
+        height: 90%;
+    }
+
+    .heading h1 {
+        font-size: 20px;
+    }
+
+    .card-container {
+        height: 73rem;
+    }
+
+    .cards {
+        width: 22rem;
+        height: 70rem;
+        display: grid;
+        grid-template-areas:
+            "supervisor"
+            "team"
+            "karma"
+            "calc";
+        grid-gap: 1.5rem;
+    }
+
+    .supervisor, .team-builder, .karma, .calculator {
+        width: 20rem;
+        height: 14.75rem;
+        margin: auto;
+    }
 }
